@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <p><strong>Name:</strong> {{ contact.name }}</p>
+    <p><strong>Address:</strong> {{ contact.address }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    <p><strong>Profession:</strong> {{ contact.profession }}</p>
+    <p><strong>Entry Date:</strong> {{ contact.entry_date }}</p>  <!-- Display entry date -->
+    <p><strong>Expiry Date:</strong> {{ contact.expiry_date }}</p>  <!-- Display expiry date -->
+    <a href="{% url 'contact_list' %}">Back to Contact List</a>
+</body>
+</html>
